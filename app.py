@@ -27,11 +27,11 @@ def webhook():
     r.headers['Content-Type'] = 'application/json'
     return r
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     object=WeatherData()
     #port = int(os.getenv('PORT', 5000))
     #print("Starting app on port %d" % port)
-    app.run(debug=True)
+    #app.run(debug=True)
 
-#if __name__=='__main__':
-    #app.run(host='0.0.0.0',port=8080)
+if __name__=='__main__':
+    app.run(host='0.0.0.0',port=8080)
